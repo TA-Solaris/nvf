@@ -48,10 +48,10 @@
         crates.enable = false;
       };
       yaml.enable = true;
-      
-      csharp.enable = true;
+
+      csharp.enable = false; # Problems on darwin
       css.enable = true;
-      clang.enable = true;
+      clang.enable = false; # Problems on darwin
       dart.enable = true;
       haskell.enable = true;
       html.enable = true;

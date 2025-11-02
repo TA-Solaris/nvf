@@ -14,7 +14,7 @@ You can run this config with the following command:
 nix run github:TA-Solaris/nvf#default
 ```
 
-### With Home Manager
+### With Home Manager and Flakes
 
 In flake.nix:
 
@@ -31,6 +31,14 @@ In Home.nix:
 home.packages = {
   inputs.nvf.packages.${pkgs.system}.default
 }
+```
+
+## Updating
+
+### With Flakes
+
+```bash
+nix flake lock --update-input nvf
 ```
 
 ## Current Supported Systems

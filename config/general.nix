@@ -4,7 +4,7 @@
     # https://notashelf.github.io/nvf/options.html
 
     lineNumberMode = "relNumber"; # relative numbers
-    
+
     # Greeter
     dashboard.alpha = {
       enable = true;
@@ -25,7 +25,7 @@
     filetree.neo-tree.enable = true; # Filetree
 
     treesitter.context.enable = true;
-    
+
     # Help with remembering keybindings
     binds = {
       whichKey.enable = true;
@@ -37,6 +37,14 @@
     git = {
       enable = true;
       gitsigns.enable = true;
+    };
+
+    # Debugging code
+    debugger = {
+      nvim-dap = {
+        enable = true;
+        ui.enable = true;
+      };
     };
 
     utility = {
@@ -53,7 +61,7 @@
     comments = {
       comment-nvim.enable = true;
     };
-    
+
     options = {
       # 2-space indents
       tabstop = 2;

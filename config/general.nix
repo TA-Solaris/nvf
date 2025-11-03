@@ -47,6 +47,11 @@
       };
     };
 
+    assistant = {
+      chatgpt.enable = false;
+      avante-nvim.enable = true;
+    };
+
     utility = {
       diffview-nvim.enable = true;
 

@@ -33,6 +33,14 @@ home.packages = {
 }
 ```
 
+### AI Assistant
+
+To use AI with claude, set this environment variable:
+
+```bash
+export AVANTE_ANTHROPIC_API_KEY=[your-api-key]
+```
+
 ## Updating
 
 ### With Flakes

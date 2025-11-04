@@ -3,6 +3,9 @@
     # For list of options see
     # https://notashelf.github.io/nvf/options.html
 
+    # Add config directory to runtimepath to load custom lua files
+    additionalRuntimePaths = [ ./config ];
+
     lineNumberMode = "relNumber"; # relative numbers
 
     # Greeter
@@ -25,12 +28,6 @@
     filetree.neo-tree.enable = true; # Filetree
 
     treesitter.context.enable = true;
-
-    # Help with remembering keybindings
-    binds = {
-      whichKey.enable = true;
-      cheatsheet.enable = true;
-    };
 
     telescope.enable = true;
 

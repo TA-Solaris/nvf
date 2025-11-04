@@ -93,6 +93,13 @@
         desc = "Toggle Neotree";
       }
       {
+        key = "<C-t>";
+        mode = "n";
+        silent = true;
+        action = ":lua require(\"neotest\").summary.toggle()<CR>";
+        desc = "Toggle Neotest";
+      }
+      {
         key = "<C-a>";
         mode = "n";
         silent = true;

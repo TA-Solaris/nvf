@@ -1,4 +1,4 @@
-{
+{ pkgs, ... } : {
   vim = {
     # For list of options see
     # https://notashelf.github.io/nvf/options.html
@@ -42,6 +42,27 @@
       nvim-dap = {
         enable = true;
         ui.enable = true;
+      };
+    };
+
+    extraPlugins = with pkgs.vimPlugins; {
+      neotest-python = {
+        package = neotest-python;
+      };
+      neotest-java = {
+        package = neotest-java;
+      };
+      neotest = {
+        package = neotest;
+        setup = ''
+          require("neotest").setup({
+            adapters = {
+              require("neotest-python"),
+              require("neotest-java"),
+            },
+          })
+        '';
+        after = ["neotest-python" "neotest-java"];
       };
     };
 

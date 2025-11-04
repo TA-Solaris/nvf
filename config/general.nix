@@ -34,6 +34,7 @@
     git = {
       enable = true;
       gitsigns.enable = true;
+      neogit.enable = true;
     };
 
     # Debugging code

@@ -63,8 +63,9 @@
 
     ui.noice.enable = true; # command bar
 
-    comments = {
-      comment-nvim.enable = true;
+    comments.comment-nvim = {
+      enable = true;
+      setupOpts.mappings.basic = true;
     };
 
     options = {

@@ -23,10 +23,10 @@
     };
 
     git.git-conflict.mappings = {
-      both = "<leader>gcb";
-      none = "<leader>gcn";
-      ours = "<leader>gco";
-      theirs = "<leader>gct";
+      both = "<leader>gob";
+      none = "<leader>gon";
+      ours = "<leader>goo";
+      theirs = "<leader>got";
     };
 
     lsp.nvim-docs-view.mappings = {
@@ -43,7 +43,7 @@
         desc = "+Git";
       }
       {
-        key = "<leader>gc";
+        key = "<leader>go";
         mode = "n";
         silent = true;
         action = "";

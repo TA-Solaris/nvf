@@ -49,7 +49,10 @@
       };
       yaml.enable = true;
 
-      csharp.enable = false; # Problems on darwin
+      csharp = {
+        enable = true;
+        lsp.server = "omnisharp";
+      };
       css.enable = true;
       clang.enable = false; # Problems on darwin
       dart.enable = true;

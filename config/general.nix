@@ -1,10 +1,10 @@
-{ pkgs, ... } : {
+{pkgs, ...}: {
   vim = {
     # For list of options see
     # https://notashelf.github.io/nvf/options.html
 
     # Add config directory to runtimepath to load custom lua files
-    additionalRuntimePaths = [ ./config ];
+    additionalRuntimePaths = [./config];
 
     lineNumberMode = "relNumber"; # relative numbers
 
@@ -52,6 +52,9 @@
       neotest-java = {
         package = neotest-java;
       };
+      neotest-dotnet = {
+        package = neotest-dotnet;
+      };
       neotest = {
         package = neotest;
         setup = ''
@@ -59,10 +62,11 @@
             adapters = {
               require("neotest-python"),
               require("neotest-java"),
+              require("neotest-dotnet"),
             },
           })
         '';
-        after = ["neotest-python" "neotest-java"];
+        after = ["neotest-python" "neotest-java" "neotest-dotnet"];
       };
     };
 
